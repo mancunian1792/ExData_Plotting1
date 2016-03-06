@@ -41,7 +41,7 @@ lines(working_set$Date,working_set$Sub_metering_3,col="blue")
 legend("topright", col=c("black","red","blue"), c("Sub_metering_1  ","Sub_metering_2  ", "Sub_metering_3  "),bty="n",cex = 0.5)
 
 #plot 4_2_2
-plot(working_set$Date,working_set$Global_reactive_power,type="l",xlab = "datetime")
+plot(working_set$Date,working_set$Global_reactive_power,type="l",xlab = "datetime",ylab="Global_reactive_power")
 
 # Saving to a png file 
 dev.copy(png, file="plot4.png", width=480, height=480)
